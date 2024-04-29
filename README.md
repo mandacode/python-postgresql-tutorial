@@ -6,7 +6,8 @@ docker
 download to your local machine using git clone command, then change directory and set up postgres in docker container using the following command:
 ```
 docker pull postgres && \
-docker run --name postgresql -e POSTGRES_USER=manda -e POSTGRES_PASSWORD=mandapass -e POSTGRES_DB=mandadb -p 5432:5432 -d postgres
+docker run --name postgresql -e POSTGRES_USER=manda -e POSTGRES_PASSWORD=mandapass -e POSTGRES_DB=mandadb \
+-p 5432:5432 -d postgres
 ```
 install requirements in virtual environment and execute script:
 ```
