@@ -22,7 +22,6 @@ def main():
             port=DB_PORT
     ) as connection:
         cursor = connection.cursor()
-        cursor.execute("DROP TABLE employees;")
         cursor.execute(
             "CREATE TABLE employees "
             "(id SERIAL PRIMARY KEY, first_name VARCHAR(50), last_name VARCHAR(50), email VARCHAR(100), hire_date DATE);"
